@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="assets/jquery-latest.min.js"></script>
+	<script src="assets/masonry.js"></script>
+	<link rel="stylesheet" href="./assets/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="./assets/fancybox/jquery.fancybox.pack.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header"></div>
+        <!--e:header-->
+        <div class="container">
+            <div class="grid">
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture1" href="./images/arch_01.jpg"><img src="./images/arch_01.jpg" alt=""></a>
+                    <span class="contents">
+                        <span class="title">건축물 1 입니다.</span>
+                        <span class="txt">아름다운 건축물 100 수상</span>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture2" href="./images/arch_02.jpg"><img src="./images/arch_02.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture3" href="./images/arch_03.jpg"><img src="./images/arch_03.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture4" href="./images/arch_04.jpeg"><img src="./images/arch_04.jpeg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture5" href="./images/arch_05.jpg"><img src="./images/arch_05.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture6" href="./images/arch_06.jpg"><img src="./images/arch_06.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture7" href="./images/arch_07.jpg"><img src="./images/arch_07.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture1" href="./images/arch_08.jpg"><img src="./images/arch_08.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture1" href="./images/arch_09.jpg"><img src="./images/arch_09.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture1" href="./images/arch_10.jpg"><img src="./images/arch_10.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture1" href="./images/arch_11.jpg"><img src="./images/arch_11.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture1" href="./images/arch_12.jpg"><img src="./images/arch_12.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture1" href="./images/arch_13.jpg"><img src="./images/arch_13.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture1" href="./images/arch_14.jpg"><img src="./images/arch_14.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture1" href="./images/arch_15.jpg"><img src="./images/arch_15.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+                <div class="grid-item">
+                    <a class="fancybox" rel="gallery1" title="architecture1" href="./images/arch_16.jpg"><img src="./images/arch_16.jpg" alt=""></a><span class="contents"><span class="title"></span><span class="txt"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    
+    jQuery(function($){
+        $(window).on('load',(function(){
+            $('.grid').masonry({
+                columnWidth: 210
+            });
+        })) //window가 load 될 때 masonry가 실행되게 함.
+        
+        $(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+    })
+    </script>
+</body>
+</html>
